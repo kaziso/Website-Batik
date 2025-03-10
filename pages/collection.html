@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koleksi Batik - ReBatik</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-leaf"></i> ReBatik
+      </a>
+
+      <!-- Hamburger Menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/jual-beli.html">Jual-Beli</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/exchange.html">Tukar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/exchange.html">Tantangan</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="../pages/collection.html">Koleksi Batik</a></li>
+              <li><a class="dropdown-item" href="../pages/education.html">Edukasi</a></li>
+              <li><a class="dropdown-item" href="../pages/blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="../pages/faq.html">FAQ</a></li>
+            </ul>
+          </li>
+
+          <!-- Search Bar -->
+          <form class="d-flex ms-3">
+            <div class="input-group search-bar">
+              <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="button">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+
+          <!-- Dark/Light Mode Toggle -->
+          <div class="form-check form-switch ms-3">
+            <input class="form-check-input" type="checkbox" id="darkModeToggle">
+            <label class="form-check-label" for="darkModeToggle">
+              <i class="fas fa-moon"></i>
+            </label>
+          </div>
+
+          <!-- CTA Button -->
+          <a href="#" class="btn btn-primary ms-3">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Hero Section -->
+  <section class="collection-hero" data-aos="fade-down" data-aos-duration="1000">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+          <h1 class="hero-title">Koleksi Batik Terbaru</h1>
+          <p class="hero-subtitle">Temukan koleksi batik modern dan eksklusif dari ReBatik, ramah lingkungan dan penuh makna.</p>
+          <a href="#collection-grid" class="btn btn-primary">Jelajahi Koleksi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Produk -->
+  <section class="filter-section" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <h2 class="section-title text-center">Filter Koleksi Batik</h2>
+      <div class="row g-3 justify-content-center">
+        <!-- Filter Kategori -->
+        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+          <div class="filter-card">
+            <div class="filter-icon">
+              <i class="fas fa-tags"></i>
+            </div>
+            <h3 class="filter-title">Kategori</h3>
+            <select class="form-select">
+              <option selected>Pilih Kategori</option>
+              <option value="tulis">Batik Tulis</option>
+              <option value="cap">Batik Cap</option>
+              <option value="modern">Batik Modern</option>
+            </select>
+          </div>
+        </div>
+        <!-- Filter Harga -->
+        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+          <div class="filter-card">
+            <div class="filter-icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <h3 class="filter-title">Harga</h3>
+            <select class="form-select">
+              <option selected>Pilih Rentang Harga</option>
+              <option value="100-500">Rp100.000 - Rp500.000</option>
+              <option value="500-1000">Rp500.000 - Rp1.000.000</option>
+              <option value="1000+">Di atas Rp1.000.000</option>
+            </select>
+          </div>
+        </div>
+        <!-- Filter Warna -->
+        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+          <div class="filter-card">
+            <div class="filter-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3 class="filter-title">Warna</h3>
+            <select class="form-select">
+              <option selected>Pilih Warna</option>
+              <option value="hitam">Hitam</option>
+              <option value="coklat">Coklat</option>
+              <option value="biru">Biru</option>
+              <option value="merah">Merah</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Daftar Koleksi Batik -->
+  <section id="collection-grid" class="collection-grid">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Product Card 1 -->
+        <div class="col-md-3 col-sm-6" data-aos="flip-left" data-aos-duration="1000">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/ker1.jpg" alt="Batik Modern 1" class="img-fluid">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Batik Modern 1</h3>
+              <p class="product-price">Rp 250.000</p>
+              <button class="btn btn-buy">Beli Sekarang</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="col-md-3 col-sm-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/ker2.jpg" alt="Batik Modern 2" class="img-fluid">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Batik Modern 2</h3>
+              <p class="product-price">Rp 300.000</p>
+              <button class="btn btn-buy">Beli Sekarang</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="col-md-3 col-sm-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/ker3.jpg" alt="Batik Modern 3" class="img-fluid">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Batik Modern 3</h3>
+              <p class="product-price">Rp 350.000</p>
+              <button class="btn btn-buy">Beli Sekarang</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="col-md-3 col-sm-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/ker4.jpg" alt="Batik Modern 4" class="img-fluid">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Batik Modern 4</h3>
+              <p class="product-price">Rp 400.000</p>
+              <button class="btn btn-buy">Beli Sekarang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <a class="footer-brand" href="#">
+            <i class="fas fa-leaf"></i> ReBatik
+          </a>
+          <p class="footer-description">
+            ReBatik adalah brand fashion batik modern yang ramah lingkungan, menggabungkan tradisi dan inovasi.
+          </p>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Jual/Beli</a></li>
+            <li><a href="#">Tukar Pakaian</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="footer-title">Contact Us</h5>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> Jl. Batik No. 123, Jakarta, Indonesia</li>
+            <li><i class="fas fa-envelope"></i> info@rebatik.com</li>
+            <li><i class="fas fa-phone"></i> +62 123 4567 890</li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="footer-title">Follow Us</h5>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2024 ReBatik. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

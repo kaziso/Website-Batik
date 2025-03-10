@@ -1,0 +1,164 @@
+/* Global Styles */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar Styling */
+.navbar {
+  background: #111; /* Warna hijau tua dengan transparansi */
+  backdrop-filter: blur(10px); /* Efek glassmorphism */
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: #111; /* Warna solid saat di-scroll */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white !important;
+}
+
+.navbar-brand i {
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: white !important;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffa726 !important; /* Warna oranye saat hover */
+}
+
+.dropdown-menu {
+  background: white;
+  border: none;
+}
+
+.dropdown-item {
+  color: black!important;
+}
+
+.dropdown-item:hover {
+  background: #ffa726; /* Warna oranye saat hover */
+  color: black !important;
+}
+
+.search-bar {
+  max-width: 200px;
+  transition: max-width 0.3s ease;
+}
+
+.search-bar:focus-within {
+  max-width: 300px;
+}
+
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 70vh;
+    background-image: url('https://source.unsplash.com/1600x900/?batik,fashion');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-content .btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+  
+  /* Card Styles */
+  .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .btn-outline-success {
+    border-color: #28a745;
+    color: #28a745;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+  }
+  
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    color: #28a745;
+  }

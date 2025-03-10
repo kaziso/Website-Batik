@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog ReBatik</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/blog.css">
+</head>
+<body class="dark-theme">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-leaf"></i> ReBatik
+      </a>
+
+      <!-- Hamburger Menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/jual-beli.html">Jual-Beli</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/exchange.html">Tukar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/challenge.html">Tantangan</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="../pages/collection.html">Koleksi Batik</a></li>
+              <li><a class="dropdown-item" href="../pages/education.html">Edukasi</a></li>
+              <li><a class="dropdown-item" href="../pages/blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="../pages/faq.html">FAQ</a></li>
+            </ul>
+          </li>
+
+          <!-- Search Bar -->
+          <form class="d-flex ms-3">
+            <div class="input-group search-bar">
+              <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="button">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+
+          <!-- Dark/Light Mode Toggle -->
+          <div class="form-check form-switch ms-3">
+            <input class="form-check-input" type="checkbox" id="darkModeToggle">
+            <label class="form-check-label" for="darkModeToggle">
+              <i class="fas fa-moon"></i>
+            </label>
+          </div>
+
+          <!-- CTA Button -->
+          <a href="#" class="btn btn-primary ms-3">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center text-white d-flex align-items-center justify-content-center" data-aos="fade-down" data-aos-duration="1000">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="display-4 fw-bold">Blog ReBatik</h1>
+      <p class="lead mb-4">Temukan artikel menarik seputar batik, fashion berkelanjutan, dan tips styling.</p>
+      <a href="#daftar-artikel" class="btn btn-lg btn-success">Jelajahi Artikel</a>
+    </div>
+  </section>
+
+  <!-- Daftar Artikel -->
+  <section id="daftar-artikel" class="container py-5">
+    <div class="row g-4">
+      <!-- Artikel 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+        <div class="card h-100 bg-dark text-white border-0 shadow-lg">
+          <img src="../assets/images/sejarah.jpg" class="card-img-top" alt="Sejarah Batik">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Sejarah Batik dan Perkembangannya di Dunia Fashion</h5>
+            <p class="card-text">Mengenal sejarah batik dan bagaimana batik berkembang dari masa ke masa.</p>
+            <a href="#" class="btn btn-outline-success">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artikel 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <div class="card h-100 bg-dark text-white border-0 shadow-lg">
+          <img src="../assets/images/tips.jpg" class="card-img-top" alt="Tips Styling Batik">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Tips Memadukan Batik agar Terlihat Modern dan Stylish</h5>
+            <p class="card-text">Panduan styling batik agar tetap fashionable di berbagai kesempatan.</p>
+            <a href="#" class="btn btn-outline-success">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artikel 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="card h-100 bg-dark text-white border-0 shadow-lg">
+          <img src="../assets/images/berkelanjutan.webp" class="card-img-top" alt="Fashion Berkelanjutan">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Kenapa Harus Beralih ke Fashion Berkelanjutan?</h5>
+            <p class="card-text">Manfaat fashion ramah lingkungan dan bagaimana kita bisa berkontribusi.</p>
+            <a href="#" class="btn btn-outline-success">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artikel 4 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="card h-100 bg-dark text-white border-0 shadow-lg">
+          <img src="../assets/images/agar awet.jpg" class="card-img-top" alt="Merawat Batik">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Cara Merawat Batik Agar Tetap Awet dan Tidak Luntur</h5>
+            <p class="card-text">Tips menjaga warna dan keawetan kain batik.</p>
+            <a href="#" class="btn btn-outline-success">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artikel 5 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <div class="card h-100 bg-dark text-white border-0 shadow-lg">
+          <img src="../assets/images/tren.jpg" class="card-img-top" alt="Tren Fashion Ramah Lingkungan">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Tren Fashion Ramah Lingkungan di Tahun Ini</h5>
+            <p class="card-text">Tren terbaru dalam fashion berkelanjutan dan inovasi terkini.</p>
+            <a href="#" class="btn btn-outline-success">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artikel 6 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <div class="card h-100 bg-dark text-white border-0 shadow-lg">
+          <img src="../assets/images/recy.jpg" class="card-img-top" alt="Recycle Fashion">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Mengenal Konsep Recycle Fashion</h5>
+            <p class="card-text">Bagaimana mendaur ulang pakaian dapat mengurangi limbah tekstil.</p>
+            <a href="#" class="btn btn-outline-success">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kategori Artikel -->
+  <section class="bg-black text-white py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-down" data-aos-duration="1000">Kategori Artikel</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div class="card bg-dark text-white border-0 shadow-lg">
+            <div class="card-body text-center">
+              <i class="fas fa-tshirt fa-3x mb-3"></i>
+              <h5 class="card-title">Batik</h5>
+              <p class="card-text">Artikel seputar batik dan perkembangannya.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="card bg-dark text-white border-0 shadow-lg">
+            <div class="card-body text-center">
+              <i class="fas fa-leaf fa-3x mb-3"></i>
+              <h5 class="card-title">Fashion Berkelanjutan</h5>
+              <p class="card-text">Tips dan tren fashion ramah lingkungan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="card bg-dark text-white border-0 shadow-lg">
+            <div class="card-body text-center">
+              <i class="fas fa-lightbulb fa-3x mb-3"></i>
+              <h5 class="card-title">Tips & Trik</h5>
+              <p class="card-text">Panduan styling dan perawatan pakaian.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-4">
+    <div class="container text-center">
+      <div class="mb-3">
+        <a href="#" class="text-white me-3">Home</a>
+        <a href="#" class="text-white me-3">Koleksi Batik</a>
+        <a href="#" class="text-white me-3">Jual/Beli</a>
+        <a href="#" class="text-white me-3">Tukar Pakaian</a>
+        <a href="#" class="text-white me-3">Edukasi</a>
+        <a href="#" class="text-white">Kontak</a>
+      </div>
+      <div class="mb-3">
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p class="mb-0">&copy; 2023 ReBatik. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Inisialisasi AOS
+    AOS.init();
+  </script>
+</body>
+</html>

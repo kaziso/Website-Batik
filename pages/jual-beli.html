@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jual & Beli Pakaian Batik - ReBatik</title>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-leaf"></i> ReBatik
+      </a>
+
+      <!-- Hamburger Menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/jual-beli.html">Jual-Beli</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/exchange.html">Tukar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/challenge.html">Tantangan</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="../pages/collection.html">Koleksi Batik</a></li>
+              <li><a class="dropdown-item" href="../pages/education.html">Edukasi</a></li>
+              <li><a class="dropdown-item" href="../pages/blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="../pages/faq.html">FAQ</a></li>
+            </ul>
+          </li>
+
+          <!-- Search Bar -->
+          <form class="d-flex ms-3">
+            <div class="input-group search-bar">
+              <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="button">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+
+          <!-- Dark/Light Mode Toggle -->
+          <div class="form-check form-switch ms-3">
+            <input class="form-check-input" type="checkbox" id="darkModeToggle">
+            <label class="form-check-label" for="darkModeToggle">
+              <i class="fas fa-moon"></i>
+            </label>
+          </div>
+
+          <!-- CTA Button -->
+          <a href="#" class="btn btn-primary ms-3">Sign Up</a>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="sell-buy-hero" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+          <h1 class="hero-title">Jual & Beli Pakaian Batik</h1>
+          <p class="hero-subtitle">Temukan pakaian batik modern berkualitas tinggi atau jual pakaian bekas Anda di ReBatik.</p>
+          <div class="cta-buttons">
+            <a href="#buy-section" class="btn btn-primary">Lihat Koleksi</a>
+            <a href="#sell-section" class="btn btn-outline-light">Jual Pakaian</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian Beli Pakaian -->
+  <section id="buy-section" class="buy-section">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">Daftar Pakaian Tersedia</h2>
+      <div class="row g-4">
+        <!-- Product Card 1 -->
+        <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/baju6.jpg" alt="Batik Modern 1" class="img-fluid">
+              <div class="product-badge">Diskon 20%</div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Batik Modern 1</h3>
+              <p class="product-price">Rp 250.000 <span class="discount-price">Rp 200.000</span></p>
+              <p class="product-description">Batik modern dengan motif unik, bahan katun premium.</p>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#checkoutModal">Beli Sekarang</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/baju7.jpg" alt="Batik Modern 2" class="img-fluid">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Batik Modern 2</h3>
+              <p class="product-price">Rp 300.000</p>
+              <p class="product-description">Batik casual untuk gaya sehari-hari, nyaman dipakai.</p>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#checkoutModal">Beli Sekarang</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/baju8.jpg" alt="Batik Modern 3" class="img-fluid">
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Batik Modern 3</h3>
+              <p class="product-price">Rp 350.000</p>
+              <p class="product-description">Batik eksklusif dengan desain terbatas, bahan sutra.</p>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#checkoutModal">Beli Sekarang</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/baju9.jpg" alt="Batik Modern 4" class="img-fluid">
+              <div class="product-badge">Diskon 15%</div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Batik Modern 4</h3>
+              <p class="product-price">Rp 400.000 <span class="discount-price">Rp 340.000</span></p>
+              <p class="product-description">Batik formal untuk acara spesial, bahan katun halus.</p>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#checkoutModal">Beli Sekarang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Checkout -->
+  <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="checkoutModalLabel">Checkout</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="checkout-summary">
+            <img src="assets/images/product1.jpg" alt="Batik Modern 1" class="img-fluid">
+            <h3>Batik Modern 1</h3>
+            <p>Rp 200.000</p>
+          </div>
+          <form class="checkout-form">
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="text" placeholder="Alamat Lengkap" required>
+            <input type="text" placeholder="Nomor HP" required>
+            <select required>
+              <option value="">Pilih Metode Pembayaran</option>
+              <option value="bank">Transfer Bank</option>
+              <option value="e-wallet">E-Wallet</option>
+            </select>
+            <button type="submit" class="btn btn-confirm">Konfirmasi Pembelian</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bagian Jual Pakaian -->
+  <section id="sell-section" class="sell-section" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <h2 class="section-title text-center">Jual Pakaian Anda</h2>
+      <p class="section-subtitle text-center">Isi formulir di bawah ini untuk menjual pakaian batik Anda.</p>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form class="sell-form">
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="text" placeholder="Nomor HP" required>
+            <input type="text" placeholder="Nama Pakaian" required>
+            <textarea placeholder="Deskripsi Singkat" required></textarea>
+            <input type="text" placeholder="Harga yang Diinginkan" required>
+            <input type="file" accept="image/*" required>
+            <button type="submit" class="btn btn-submit">Kirim Permintaan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <a class="footer-brand" href="#">
+            <i class="fas fa-leaf"></i> ReBatik
+          </a>
+          <p class="footer-description">
+            ReBatik adalah brand fashion batik modern yang ramah lingkungan, menggabungkan tradisi dan inovasi.
+          </p>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="footer-title">Contact Us</h5>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> Jl. Batik No. 123, Jakarta, Indonesia</li>
+            <li><i class="fas fa-envelope"></i> info@rebatik.com</li>
+            <li><i class="fas fa-phone"></i> +62 123 4567 890</li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="footer-title">Follow Us</h5>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2024 ReBatik. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script untuk Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Inisialisasi AOS -->
+  <script>
+    AOS.init();
+  </script>
+  <!-- Custom JS -->
+  <script src="../assets/js/script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

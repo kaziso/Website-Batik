@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tantangan Repair and Reuse - ReBatik</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-leaf"></i> ReBatik
+      </a>
+
+      <!-- Hamburger Menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/jual-beli.html">Jual-Beli</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/exchange.html">Tukar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/exchange.html">Tantangan</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="../pages/collection.html">Koleksi Batik</a></li>
+              <li><a class="dropdown-item" href="../pages/education.html">Edukasi</a></li>
+              <li><a class="dropdown-item" href="../pages/blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="../pages/faq.html">FAQ</a></li>
+            </ul>
+          </li>
+
+          <!-- Search Bar -->
+          <form class="d-flex ms-3">
+            <div class="input-group search-bar">
+              <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="button">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+
+          <!-- Dark/Light Mode Toggle -->
+          <div class="form-check form-switch ms-3">
+            <input class="form-check-input" type="checkbox" id="darkModeToggle">
+            <label class="form-check-label" for="darkModeToggle">
+              <i class="fas fa-moon"></i>
+            </label>
+          </div>
+
+          <!-- CTA Button -->
+          <a href="#" class="btn btn-primary ms-3">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Hero Section -->
+  <section class="challenge-hero" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+          <h1 class="hero-title">Tantangan Repair and Reuse</h1>
+          <p class="hero-subtitle">Ikuti tantangan ini untuk memperbaiki pakaian Anda dan mengurangi limbah tekstil!</p>
+          <a href="#registration-form" class="btn btn-primary">Ikuti Tantangan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deskripsi Tantangan -->
+  <section class="challenge-description">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">Apa Itu Tantangan Repair and Reuse?</h2>
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+          <p class="description-text">
+            Tantangan ini bertujuan untuk mendorong kreativitas dalam memperbaiki pakaian yang rusak atau mengubahnya menjadi sesuatu yang baru. Dengan mengikuti tantangan ini, Anda berkontribusi dalam mengurangi limbah tekstil dan mendukung gaya hidup berkelanjutan.
+          </p>
+          <ul class="challenge-instructions">
+            <li><strong>Tujuan:</strong> Mengurangi limbah tekstil dan mendorong kreativitas.</li>
+            <li><strong>Instruksi:</strong> Perbaiki pakaian yang rusak atau ubah menjadi sesuatu yang baru.</li>
+            <li><strong>Batas Waktu:</strong> 30 Hari</li>
+            <li><strong>Hadiah:</strong> Hadiah menarik bagi peserta terbaik!</li>
+          </ul>
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+          <img src="../assets/images/sus1.jpg" alt="Sustainable Fashion" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulir Pendaftaran Tantangan -->
+  <section id="registration-form" class="registration-form" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <h2 class="section-title text-center">Daftar Sekarang</h2>
+      <p class="section-subtitle text-center">Bergabunglah dengan tantangan ini dan tunjukkan kreativitas Anda dalam memperbaiki pakaian!</p>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="form-container">
+            <form class="challenge-form">
+              <!-- Nama Lengkap -->
+              <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <label for="fullName">Nama Lengkap</label>
+                <input type="text" id="fullName" placeholder="Masukkan nama lengkap Anda" required>
+              </div>
+              <!-- Email -->
+              <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Masukkan alamat email Anda" required>
+              </div>
+              <!-- Nomor HP -->
+              <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <label for="phone">Nomor HP</label>
+                <input type="text" id="phone" placeholder="Masukkan nomor HP Anda" required>
+              </div>
+              <!-- Deskripsi Pakaian -->
+              <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <label for="clothingDescription">Deskripsi Pakaian yang Akan Diperbaiki</label>
+                <textarea id="clothingDescription" placeholder="Jelaskan pakaian yang akan diperbaiki (bahan, ukuran, kerusakan, dll.)" required></textarea>
+              </div>
+              <!-- Upload Gambar -->
+              <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <label for="clothingImage">Upload Gambar Pakaian Sebelum</label>
+                <input type="file" id="clothingImage" accept="image/*" required>
+                <small class="form-text">Unggah gambar pakaian (maks. 5MB).</small>
+              </div>
+              <!-- Upload Gambar -->
+              <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <label for="clothingImage">Upload Gambar Pakaian Sesudah</label>
+                <input type="file" id="clothingImage" accept="image/*" required>
+                <small class="form-text">Unggah gambar pakaian (maks. 5MB).</small>
+              </div>
+              <!-- Catatan Tambahan -->
+              <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                <label for="additionalNotes">Catatan Tambahan</label>
+                <textarea id="additionalNotes" placeholder="Tambahkan catatan atau ide kreatif Anda (opsional)"></textarea>
+              </div>
+              <!-- Tombol Submit -->
+              <div class="form-group text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                <button type="submit" class="btn btn-submit">Kirim Pendaftaran</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri Inspirasi -->
+  <section class="inspiration-gallery">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">Inspirasi Repair & Reuse</h2>
+      <div class="row g-4">
+        <!-- Gambar Inspirasi 1 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="gallery-item">
+            <img src="../assets/images/re7.jpg" alt="Inspirasi 1" class="img-fluid">
+            <div class="gallery-overlay">
+              <p>Pakaian yang diperbaiki dengan teknik patchwork.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Gambar Inspirasi 2 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="gallery-item">
+            <img src="../assets/images/re5.jpg" alt="Inspirasi 2" class="img-fluid">
+            <div class="gallery-overlay">
+              <p>Pakaian lama diubah menjadi tas cantik.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Gambar Inspirasi 3 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <div class="gallery-item">
+            <img src="../assets/images/re6.jpg" alt="Inspirasi 3" class="img-fluid">
+            <div class="gallery-overlay">
+              <p>Pakaian rusak diperbaiki dengan teknik sulam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <a class="footer-brand" href="#">
+            <i class="fas fa-leaf"></i> ReBatik
+          </a>
+          <p class="footer-description">
+            ReBatik adalah brand fashion batik modern yang ramah lingkungan, menggabungkan tradisi dan inovasi.
+          </p>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Jual/Beli</a></li>
+            <li><a href="#">Tukar Pakaian</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="footer-title">Contact Us</h5>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> Jl. Batik No. 123, Jakarta, Indonesia</li>
+            <li><i class="fas fa-envelope"></i> info@rebatik.com</li>
+            <li><i class="fas fa-phone"></i> +62 123 4567 890</li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="footer-title">Follow Us</h5>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2024 ReBatik. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
